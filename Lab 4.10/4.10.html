@@ -21,7 +21,7 @@
                <h1>OATMEAL COCONUT PANTRY COOKIES</h1>         <p>Chef Roman, August 24, 2018</p>
             </div>
             <div class="summary">
-               <img src="C:\Users\pisce\OneDrive\Documents\GitHub\IntroductionToWebDevelopment-v2.2\Lab 4.10\oatmealCookie_small.jpg" alt="Photo of two of the world's best oatmeal cookies">
+               <img src="oatmealCookie_small.jpg" alt="Photo of two of the world's best oatmeal cookies">
                <div>
                   <div>
                      <p>Prep Time:</p>
@@ -99,49 +99,64 @@
       display: flex;
       justify-content: space-between;
      }
+    
     .content {
-      display: flex
-      flex-wrap: wrap;
-      float: right;
+      display: flex;
+      flex-wrap: wrap;        
+      
      }
-    .main-content {
+
+    .main-content {    /*parent flex box*/
       display: flex;
       flex-wrap: wrap;
-      flex: 1, 0, 70%;
+      flex-grow: 1;
+      flex-basis: 70%;
      }
+    
     .title {
       display: flex;
       align-items: baseline;
      }
-    .summary {
+    .summary {      /*flex box for image*/
       display: flex;
       justify-content: space-evenly;
-      flex: 1, 0, 100%;
-      
-      }
-    .summary>div {
+      flex-grow: 1;
+      flex-basis: 100%;
+    }
+    .related-content { /* do not understand how to move this box over */
+      display: flex;
+      flex-flow: 1;
+      flex-basis: 20%;
+      float: right;
+      flex-direction: column;
+     }
+    
+    .summary > div {  
       display: flex;
       justify-content: space-between;
-     }
-    .ingredients, {
-      display: flex;
-      flex: 1, 0, 45%;
-      flex-basis: 30%;
-     }
-     .directions {
-      display: flex;
-      flex: 1, 0, 45%;
-     }
-    .related-content {
-      display: flex;
-      flex: 1, 0, 20%
-      flex-direction: column;
-      float: right;
+      flex: 0 0 40%;
+      grid-gap: 20px; 
+      margin-bottom: 30px;
       }
+/* .summary > div is the green flex box. Note that there is a grid inside the flex box. See given CSS rules section.*/
+    
+    
+    .ingredients, .directions {  
+      display: flex;
+      flex: 1 0 45%;
+      flex-direction: row; /*made the flex boxes stack left to right*/
+        
+            /* these 3 instructions made the text follow h2*/
+      flex-direction: column;  
+      justify-content: left;
+      text-align: left;
+     }
+    
       
-      
+</style>   
       
 
+<!-- Given CSS rules below -->
 
 <style>
 body {
@@ -189,7 +204,7 @@ header {
    padding: 5px;
    width: 210px;
    display: grid;
-	grid-template-columns: auto auto auto auto
+   grid-template-columns: auto auto auto auto;
 }
 
 .related-content {

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang= "en">
+<title>Starting Lineup</title>
+
+<body>
+  <h1>Starting Lineup</h1>
+    <form action= "https://wp.zybooks.com/form-viewer.php" method= "POST">
+      <div>
+        <p>Status:
+          <input type="radio" name="status" value="draft">
+          <label for="draft">Draft</label>
+          <input type="radio" name="status" value="final" checked>
+          <label for="final">Final</label>
+        </p>
+       </div>
+       <div>
+          <p>Date:
+            <select name="gameDate">
+              <option value="gameDate">March 20</option>
+              <option value="gameDate">March 24</option>
+              <option value="gameDate">April 2</option>
+              <option value="gameDate">April 6</option>
+              <option value="gameDate">April 13</option>
+            </select>
+          </p>
+        </div>
+        <div>
+          <p>Players:
+            <div>
+              <input type="checkbox" name="player1" value="player1">
+              <label for="player1">Aarav Agarwal</label>
+             </div>
+             <div>
+              <input type="checkbox" name="player2" value="player2">
+              <label for="player2">Ava Johnson</label>
+             </div>
+              <input type="checkbox" name="player3" value="player3">
+              <label for="player3">Julio Ortiz</label>
+             </div>
+             <div>
+              <input type="checkbox" name="player4" value="player4">
+              <label for="player4">Emma Witherspoon</label>
+             </div>
+           </p>
+      </div>
+        <input type="submit" value= "Submit">
+      </div>
+      
+    </form>
+</body>
+</html>
+<!--notice position of p and div tags are important in spacing out items. Without the p tags as they are, the widgets will start on the next line-->
