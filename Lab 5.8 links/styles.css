@@ -92,3 +92,18 @@ main > section {
 /* TODO: Add media query for 700px breakpoint */
 
 /* TODO: Add media query for 800px breakpoint */
+.vacation-container {
+            display: flex;
+            flex-direction: row;
+        }
+        
+		.vacation-container img {         
+            width: 50vw;
+            
+            }     
+        
+               
+		.vacation-container>div {
+			margin-left: 20px    
+           }
+		

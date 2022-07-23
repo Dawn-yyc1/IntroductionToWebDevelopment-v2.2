@@ -1,27 +1,37 @@
 
 <style>
+/*media query for 600px breakpoint*/    
 @media all and (min-width: 600px) {
 		 .benefits-container {
    			display: flex;
    			flex-direction: row;
 		}
 	}
-/* TODO: Add media query for 700px breakpoint */
+/* media query for 700px breakpoint */
 	@media all and (min-width: 700px) {
 		nav li {
 			display: inline;
-		header>h1 {
-			font-size: 2rem;
-			}
-			}
+        }
+        header>h1 {
+			font-size: 2rem;    
+            }
 		}
-<img src=".vacation-container img" sizes="(min-width: 800px) 50vw>
-		.vacation-container {
-			text-align: right;
-			}
+/*media query for 800px breakpoint*/  
+    @media all and (min-width: 800px) {
+        .vacation-container {
+            display: flex;
+            flex-direction: row;
+        }
+        
+		.vacation-container img {         
+            width: 50vw;
+            
+            }     
+        
+               
 		.vacation-container>div {
-			margin: 20px
-			}
+			margin-left: 20px    
+           }
 		}
 </style>
 
@@ -45,7 +55,7 @@
    <div class="benefits-container">
       <div class="benefits-inner-container">
          <div>
-            <img src="C:\Users\pisce\OneDrive\Documents\GitHub\IntroductionToWebDevelopment-v2.2\Lab 5.8 links\checkmark.png" alt="checkmark">
+            <img src="checkmark.png" alt="checkmark">
          </div>
          <div class="benefit">
             <strong>Affordable!</strong> Our vacation packages give you
@@ -54,7 +64,7 @@
       </div>
       <div class="benefits-inner-container">
          <div>
-            <img src="C:\Users\pisce\OneDrive\Documents\GitHub\IntroductionToWebDevelopment-v2.2\Lab 5.8 links\checkmark.png" alt="checkmark">
+            <img src="checkmark.png" alt="checkmark">
          </div>
          <div class="benefit">
             <strong>Quality!</strong> We use only the finest lodgings
@@ -63,7 +73,7 @@
       </div>
       <div class="benefits-inner-container">
          <div>
-            <img src="C:\Users\pisce\OneDrive\Documents\GitHub\IntroductionToWebDevelopment-v2.2\Lab 5.8 links\checkmark.png" alt="checkmark">
+            <img src="checkmark.png" alt="checkmark">
          </div>
          <div class="benefit">
             <strong>Cancel Anytime!</strong> You may cancel your trip
@@ -75,7 +85,7 @@
       <section id="featured">
          <h2>Featured Packages</h2>
          <div class="vacation-container">
-            <img src="C:\Users\pisce\OneDrive\Documents\GitHub\IntroductionToWebDevelopment-v2.2\Lab 5.8 links\egypt_600.jpg" alt="Great Sphyinx and pyramid">
+            <img src="egypt_600.jpg" alt="Great Sphyinx and pyramid">
             <div>
                <h3>Egpyt</h3>
                <p>Egpyt is a land of enduring beauty and rich culture.
@@ -93,7 +103,7 @@
       <section id="exotic">
          <h2>Exotic Vacations</h2>
          <div class="vacation-container">
-            <img src="C:\Users\pisce\OneDrive\Documents\GitHub\IntroductionToWebDevelopment-v2.2\Lab 5.8 links\greece_600.jpg" alt="Arial view of Santorini">
+            <img src="greece_600.jpg" alt="Arial view of Santorini">
             <div>
                <h3>Greece</h3>
                <p>Enjoy the scenic, peaceful Greek island of <strong>Santorini</strong>.
@@ -110,7 +120,7 @@
       <section id="historic">
          <h2>Historic Locations</h2>
          <div class="vacation-container">
-            <img src="C:\Users\pisce\OneDrive\Documents\GitHub\IntroductionToWebDevelopment-v2.2\Lab 5.8 links\israel_600.jpg"alt="Jerusalem city scape">
+            <img src="israel_600.jpg"alt="Jerusalem city scape">
             <div>
                <h3>Israel</h3>
                <p>Explore Israel's holy city of <strong>Jerusalem</strong>.
