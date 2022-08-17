@@ -14,36 +14,36 @@ import java.util.Scanner;
 public class PickyEater {
     public static void main(String[] args) {
         
-               
+                       
         Scanner userInput = new Scanner(System.in);
         
-        System.out.print("How many times has it been fried? (#) ");
+        System.out.println("How many times has it been fried? (#) ");
         int timesFried = Integer.parseInt(userInput.nextLine());
         
-        System.out.print("Does it have any spinach in it (y/n) ");
+        System.out.println("Does it have any spinach in it (y/n) ");
         String hasSpinach = userInput.nextLine();
         
-        System.out.print("is it covered in cheese? (y/n) ");
+        System.out.println("is it covered in cheese? (y/n) ");
         String cheeseCovered = userInput.nextLine();
         
-        System.out.print("How many pats of butter are on top? (#) ");
+        System.out.println("How many pats of butter are on top? (#) ");
         int butterPats = Integer.parseInt(userInput.nextLine());
         
-        System.out.print("Is it covered chocolate? (y/n) ");
+        System.out.println("Is it covered chocolate? (y/n) ");
         String chocolateCovered = userInput.nextLine();
        
-        System.out.print("Does it have a funny name? (y/n) ");
+        System.out.println("Does it have a funny name? (y/n) ");
         String funnyName = userInput.nextLine();
        
-        System.out.print("is it broccoli? (y/n) ");
+        System.out.println("is it broccoli? (y/n) ");
         String isBroccoli = userInput.nextLine();
        
         //Conditionals go here
         if(hasSpinach.equals("y") || funnyName.equals("y")) {
-            System.out.println("There's no way he'll eat that!");
+         System.out.println("There's no way he'll eat that!");
         }
-        /*
-        if(timesFried > 2 && timesFried <= 4 && chocolateCovered.equals("y")) {
+        
+          if(timesFried > 2 && timesFried <= 4 && chocolateCovered.equals("y")) {
             System.out.println("Oh, it's like a deep-fried Snickers. That'll be a hit!");
         }
         
@@ -58,7 +58,7 @@ public class PickyEater {
         if(isBroccoli.equals("y")){
             System.out.println("Oh, gree stuff like that might as well go in the bin.");
         }
-*/
+
     }
     
 }
