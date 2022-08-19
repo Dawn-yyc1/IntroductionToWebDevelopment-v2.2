@@ -1,3 +1,5 @@
+package AssessmentBasicProgrammingConcepts;
+
 
 import java.util.Random;
 import java.util.Scanner;
@@ -22,21 +24,11 @@ public class DogGenetics {
         Scanner dog = new Scanner(System.in);
         Random rGen = new Random();
         
-        int myDog1 = rGen.nextInt(100);
-        int myDog2 = rGen.nextInt(100);
-        int myDog3 = rGen.nextInt(100);
-        int myDog4 = rGen.nextInt(100);
-        int myDog5 = rGen.nextInt(100);
-        
-        
-                
-        //int sum = (100 - (myDog1 + myDog2 + myDog3 + myDog4 + myDog5)) ;
-        int[] arr = new int[5];
-        for (int i = 0; i < 5; i++) {
-        arr[i] = rGen.nextInt(100);
-            System.out.println(arr[i]);
-        }
-        
+        int myDog1 = rGen.nextInt(20)+10;
+        int myDog2 = rGen.nextInt(20)+10;
+        int myDog3 = rGen.nextInt(20)+10;
+        int myDog4 = rGen.nextInt(20)+10;
+        int myDog5 = 100 - (myDog1 + myDog2 + myDog3 + myDog4);
         
         
         System.out.println("What is your dog's name? ");
@@ -55,7 +47,14 @@ public class DogGenetics {
         System.out.println("Wow, that's QUITE the dog!");
         
         
+        /*
+        I had trouble with generating the number for the genetics. 
+        I thought about using generating an array of random numbers but after
+        doing a Google search, it seemed quite difficult. So I opted for 
+        a low key solution...generate 4 random numbers and then use the last 
+        number to subtract from so that the numbers always add to 100.
         
+        */
         
         
         
