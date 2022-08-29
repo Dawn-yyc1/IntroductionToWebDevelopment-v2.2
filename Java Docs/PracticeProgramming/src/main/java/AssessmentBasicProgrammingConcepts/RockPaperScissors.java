@@ -129,6 +129,10 @@ public class RockPaperScissors {
                     else if(scoreComp < scoreUser){
                         System.out.println("\nCongratulations you win: " +scoreUser + " Computer score: " + scoreComp );
                     }
+                    scoreComp = 0;
+                    scoreUser = 0;
+                    scoreTie = 0;
+                
             //Ask user if they want to play again or exit game        
             System.out.println("\n************************************************");    
             System.out.println("Do you want to play again (y/n)?");               

@@ -22,35 +22,39 @@ public class TraditionalFizzBuzz {
             String stringUserInput = "";
             
             System.out.println("How many units of fizzing and buzzing do you need in your life?");
-            stringUserInput = sc.nextLine();
-            System.out.println("");           
+            stringUserInput = sc.nextLine();                     
         
             userInput = Integer.parseInt(stringUserInput);
 
         //for loop for input
-          for (int i = 0; i < userInput; i++) {
+          for (int i = 0; i <= userInput; i++) {
+                              
+            if(((i % 3) == 0) && ((i % 5) == 0)){
+               System.out.println(i + " fizz buzz");
+                }  
+                else if(i % 3 == 0){
+                     System.out.println(i + " fizz");                            
+                        }else if ((i % 5) == 0){
+                          System.out.println(i + " buzz");
+                         }else{
+                           System.out.println(i);
+                            }  
               
-                if(i % 3 == 0){
-                  System.out.println(i + " fizz");
-                if(i % 5 == 0){
-                  System.out.println(i + " buzz");
-                 if(i % 3 == 0 && i % 5 == 0);
-                   System.out.println(i + " fizz buzz");
-                    }
-               
-                    }
-          }            
-                     
+            }            
+           System.out.println("Tradition!!!");          
     }
+       
       
     }
-        
+    
     /*
         I thought i needed a nested for loop but that is incorrect becuase then
         I would 2 different sets of numbers.
     
      */
         
+       
+ 
         
 
 
